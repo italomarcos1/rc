@@ -3,7 +3,7 @@ package rc1
 import java.net.Socket //bibioteca de socket
 import java.io.PrintStream
 import java.io.InputStreamReader
-import java.io.BufferedReader //lê bytes
+import java.io.BufferedReader
 import io.StdIn._ //import pra efetuar I/O
 import scala.concurrent.Future //importação do Future para rodar de forma concorrente
 import scala.concurrent.ExecutionContext.Implicits.global //importação extra pro Future funcionar
