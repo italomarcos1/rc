@@ -8,11 +8,15 @@ import io.StdIn._ //import pra efetuar I/O
 import scala.concurrent.Future //importação do Future para rodar de forma concorrente
 import scala.concurrent.ExecutionContext.Implicits.global //importação extra pro Future funcionar
 
-
+/// <summary>
+/// Objeto que atua como ponto-de-entrada (função Main) da aplicação.
+    /// <param name="historico">Descrição do movimento.</param>
+    /// <param name="valor">Valor do movimento (utilizar valores neg
+/// </summary>
 object Client extends App {
-  println("Generating socket...")
+  println("Criando socket...")
   val sock = new Socket("localhost", 8080) //cria o socket no localhost porta 8080
-  println("Done")
+  println("Socket criado.")
   val in = new BufferedReader(new InputStreamReader(sock.getInputStream))
   val out = new PrintStream(sock.getOutputStream)
 	var stopped = false;   
